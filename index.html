@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Nova Backup — personal encrypted backups"><title>Nova Backup — personal encrypted backups</title><style>:root{color-scheme:light}*{box-sizing:border-box}body{margin:0;background:#f6f8fa;color:#17212b;font:17px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:850px;margin:48px auto;padding:38px 44px;background:white;border:1px solid #dce3e8;border-radius:12px}nav,footer{font-size:14px;color:#52606d}nav a{margin-right:20px}h1{font-size:36px;line-height:1.2;margin:28px 0 12px}h2{font-size:21px;margin-top:28px}a{color:#0757a6}code{font-size:.9em;background:#eef3f7;padding:2px 5px;border-radius:4px}.lead{font-size:20px;color:#405261}footer{border-top:1px solid #e2e8ee;margin-top:32px;padding-top:18px}@media(max-width:600px){main{margin:12px;padding:24px}h1{font-size:30px}}</style></head><body><main><nav><a href="./">Nova Backup</a><a href="privacy.html">Privacy policy</a></nav><h1>Nova Backup</h1>
+<p class="lead">A personal, owner-operated tool for encrypted backups to Google Drive.</p>
+<h2>Purpose</h2>
+<p>Nova Backup uses rclone and Restic to back up server configuration and selected application data to a dedicated repository in the owner's Google Drive. It supports integrity checks and recovery.</p>
+<h2>Google Drive access</h2>
+<p>The owner authorizes a Google account using a Desktop OAuth client. The requested permission is <code>https://www.googleapis.com/auth/drive.file</code>, which limits access to files created or explicitly opened with this application. Nova Backup uses this permission to manage its own encrypted backup files and folders.</p>
+<h2>Data handling</h2>
+<p>Backup contents are encrypted with Restic before upload. Credentials are kept in restricted storage on the owner's devices. Backup retention is controlled by the owner.</p>
+<p>Read the <a href="privacy.html">privacy policy</a> for details about access, storage, deletion and hosting.</p>
+<h2>Contact</h2>
+<p>This application is used by its owner. Questions about these information pages can be directed to the <a href="https://github.com/vaikos/nova-backup-info/issues">project contact</a>. Do not include passwords, tokens or recovery keys in public messages.</p><footer>Personal application · Updated 26 October 2026</footer></main></body></html>
